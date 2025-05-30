@@ -3,11 +3,11 @@ from models.user import User
 from models.project import Project
 from models.task import Task
 
-# Drop and recreate tables
+
 Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)
 
-# Sample data
+
 u1 = User(name="Alice", email="alice@example.com")
 u2 = User(name="Bob", email="bob@example.com")
 
